@@ -1,0 +1,4 @@
+#!/usr/bin/dh-exec
+
+obj-${DEB_HOST_MULTIARCH}/crypto/libcrypto.so usr/lib/${DEB_HOST_MULTIARCH}/BoringSSL
+obj-${DEB_HOST_MULTIARCH}/ssl/libssl.so       usr/lib/${DEB_HOST_MULTIARCH}/BoringSSL

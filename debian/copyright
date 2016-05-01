@@ -1,0 +1,185 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0
+Source: https://boringssl.googlesource.com/boringssl
+Upstream-Name: BoringSSL
+
+Files: crypto/*
+       decrepit/*
+       include/*
+       ssl/*
+Copyright: 1998-2011, The OpenSSL Project
+License: OpenSSL
+
+Files: BUILDING.md
+       CMakeLists.txt
+       codereview.settings
+       CONTRIBUTING.md
+       crypto/aes/CMakeLists.txt
+       crypto/asn1/CMakeLists.txt
+       crypto/base64/CMakeLists.txt
+       crypto/bio/CMakeLists.txt
+       crypto/bn/CMakeLists.txt
+       crypto/buf/CMakeLists.txt
+       crypto/bytestring/CMakeLists.txt
+       crypto/chacha/CMakeLists.txt
+       crypto/cipher/CMakeLists.txt
+       crypto/cmac/CMakeLists.txt
+       crypto/CMakeLists.txt
+       crypto/conf/CMakeLists.txt
+       crypto/curve25519/CMakeLists.txt
+       crypto/des/CMakeLists.txt
+       crypto/dh/CMakeLists.txt
+       crypto/digest/CMakeLists.txt
+       crypto/dsa/CMakeLists.txt
+       crypto/ec/CMakeLists.txt
+       crypto/ecdh/CMakeLists.txt
+       crypto/ecdsa/CMakeLists.txt
+       crypto/engine/CMakeLists.txt
+       crypto/err/CMakeLists.txt
+       crypto/evp/CMakeLists.txt
+       crypto/hkdf/CMakeLists.txt
+       crypto/hmac/CMakeLists.txt
+       crypto/lhash/CMakeLists.txt
+       crypto/md4/CMakeLists.txt
+       crypto/md5/CMakeLists.txt
+       crypto/modes/CMakeLists.txt
+       crypto/newhope/CMakeLists.txt
+       crypto/obj/CMakeLists.txt
+       crypto/pem/CMakeLists.txt
+       crypto/pkcs8/CMakeLists.txt
+       crypto/poly1305/CMakeLists.txt
+       crypto/rand/CMakeLists.txt
+       crypto/rc4/CMakeLists.txt
+       crypto/rsa/CMakeLists.txt
+       crypto/sha/CMakeLists.txt
+       crypto/stack/CMakeLists.txt
+       crypto/test/CMakeLists.txt
+       crypto/x509/CMakeLists.txt
+       crypto/x509v3/CMakeLists.txt
+       decrepit/bio/CMakeLists.txt
+       decrepit/blowfish/CMakeLists.txt
+       decrepit/cast/CMakeLists.txt
+       decrepit/CMakeLists.txt
+       decrepit/des/CMakeLists.txt
+       decrepit/dh/CMakeLists.txt
+       decrepit/dsa/CMakeLists.txt
+       decrepit/evp/CMakeLists.txt
+       decrepit/obj/CMakeLists.txt
+       decrepit/rc4/CMakeLists.txt
+       decrepit/ripemd/CMakeLists.txt
+       decrepit/rsa/CMakeLists.txt
+       decrepit/ssl/CMakeLists.txt
+       decrepit/x509/CMakeLists.txt
+       decrepit/xts/CMakeLists.txt
+       fuzz/*
+       fuzz/CMakeLists.txt
+       FUZZING.md
+       INCORPORATING.md
+       PORTING.md
+       README.md
+       ssl/CMakeLists.txt
+       ssl/pqueue/CMakeLists.txt
+       ssl/test/CMakeLists.txt
+       STYLE.md
+       tool/CMakeLists.txt
+Copyright: 2016, Google Inc.
+
+Files: debian/*
+Copyright: 2016, Kai-Chung Yan <seamlikok@gmail.com>
+License: MIT
+
+License: OpenSSL
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer. 
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the
+    distribution.
+ 3. All advertising materials mentioning features or use of this
+    software must display the following acknowledgment:
+    "This product includes software developed by the OpenSSL Project
+    for use in the OpenSSL Toolkit. (http://www.openssl.org/)"
+ 4. The names "OpenSSL Toolkit" and "OpenSSL Project" must not be used to
+    endorse or promote products derived from this software without
+    prior written permission. For written permission, please contact
+    openssl-core@openssl.org.
+ 5. Products derived from this software may not be called "OpenSSL"
+    nor may "OpenSSL" appear in their names without prior written
+    permission of the OpenSSL Project.
+ 6. Redistributions of any form whatsoever must retain the following
+    acknowledgment:
+    "This product includes software developed by the OpenSSL Project
+    for use in the OpenSSL Toolkit (http://www.openssl.org/)"
+ .
+ THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS'' AND ANY
+ EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR
+ ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+ STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: ISC
+ Permission to use, copy, modify, and/or distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+ SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
+ OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
+ met:
+ *  Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ *  Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the
+    distribution.
+ *  Neither the name of the Intel Corporation nor the names of its
+    contributors may be used to endorse or promote products derived from
+    this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY INTEL CORPORATION ""AS IS"" AND ANY
+ EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL INTEL CORPORATION OR
+ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.

@@ -1,0 +1,5 @@
+boringssl (3.0-1) UNRELEASED; urgency=medium
+
+  * Initial release.
+
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Sun, 01 May 2016 16:51:31 +0800

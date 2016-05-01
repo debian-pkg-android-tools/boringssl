@@ -1,0 +1,51 @@
+Source: boringssl
+Section: libs
+Priority: optional
+Maintainer: Android Tools Maintainers <android-tools-devel@lists.alioth.debian.org>
+Uploaders: Kai-Chung Yan <seamlikok@gmail.com>
+Standards-Version: 3.9.8
+Build-Depends: cmake (>= 2.8.8),
+               debhelper (>= 9),
+               dh-exec,
+               golang-go,
+               perl (>= 5.6.1)
+Vcs-Git: https://anonscm.debian.org/git/android-tools/boringssl.git
+Vcs-Browser: https://anonscm.debian.org/cgit/android-tools/boringssl.git
+Homepage: https://boringssl.googlesource.com/boringssl
+
+Package: libboringssl
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Fork of OpenSSL that is designed to meet Google's needs
+ BoringSSL arose because Google used OpenSSL for many years in various ways and,
+ over time, built up a large number of patches that were maintained while
+ tracking upstream OpenSSL. As Google’s product portfolio became more complex,
+ more copies of OpenSSL sprung up and the effort involved in maintaining all
+ these patches in multiple places was growing steadily.
+ .
+ Currently BoringSSL is the SSL library in Chrome/Chromium, Android (but it's
+ not part of the NDK) and a number of other apps/programs.
+ .
+ Although BoringSSL has a different name than OpenSSL, the libraries' SONAME and
+ header files' name do not change. Hence the files of this package is placed
+ under a private directory to avoid conflict with OpenSSL in Debian.
+
+Package: libboringssl-dev
+Section: libdevel
+Architecture: all
+Depends: ${misc:Depends}
+Description: Fork of OpenSSL that is designed to meet Google's needs - Devel
+ BoringSSL arose because Google used OpenSSL for many years in various ways and,
+ over time, built up a large number of patches that were maintained while
+ tracking upstream OpenSSL. As Google’s product portfolio became more complex,
+ more copies of OpenSSL sprung up and the effort involved in maintaining all
+ these patches in multiple places was growing steadily.
+ .
+ Currently BoringSSL is the SSL library in Chrome/Chromium, Android (but it's
+ not part of the NDK) and a number of other apps/programs.
+ .
+ Although BoringSSL has a different name than OpenSSL, the libraries' SONAME and
+ header files' name do not change. Hence the files of this package is placed
+ under a private directory to avoid conflict with OpenSSL in Debian.
+ .
+ This package contains the header files.

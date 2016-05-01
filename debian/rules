@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/pkg-info.mk
+
+UPSTREAM_TAG = version_for_cocoapods_$(DEB_VERSION_UPSTREAM)
+
+%:
+	dh $@ --buildsystem=cmake
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DBUILD_SHARED_LIBS=true
+
+get-orig-source: $(UPSTREAM_TAR)
+	wget https://boringssl.googlesource.com/boringssl/+archive/$(UPSTREAM_TAG).tar.gz
