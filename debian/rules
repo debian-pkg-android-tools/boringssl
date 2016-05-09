@@ -1,5 +1,6 @@
 #!/usr/bin/make -f
 
+include /usr/share/dpkg/architecture.mk
 include /usr/share/dpkg/pkg-info.mk
 
 UPSTREAM_TAG = version_for_cocoapods_$(DEB_VERSION_UPSTREAM)
@@ -8,7 +9,9 @@ UPSTREAM_TAG = version_for_cocoapods_$(DEB_VERSION_UPSTREAM)
 	dh $@ --buildsystem=cmake
 
 override_dh_auto_configure:
-	dh_auto_configure -- -DBUILD_SHARED_LIBS=true
+	dh_auto_configure -- -DBUILD_SHARED_LIBS=true \
+	                     -DCMAKE_INSTALL_RPATH=/usr/lib/$(DEB_HOST_MULTIARCH)/BoringSSL \
+	                     -DCMAKE_BUILD_WITH_INSTALL_RPATH=true
 
 get-orig-source: $(UPSTREAM_TAR)
 	wget https://boringssl.googlesource.com/boringssl/+archive/$(UPSTREAM_TAG).tar.gz
