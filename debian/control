@@ -25,10 +25,6 @@ Description: Fork of OpenSSL that is designed to meet Google's needs
  .
  Currently BoringSSL is the SSL library in Chrome/Chromium, Android (but it's
  not part of the NDK) and a number of other apps/programs.
- .
- Although BoringSSL has a different name than OpenSSL, the libraries' SONAME and
- header files' name do not change. Hence the files of this package is placed
- under a private directory to avoid conflict with OpenSSL in Debian.
 
 Package: libboringssl-dev
 Section: libdevel
@@ -44,8 +40,20 @@ Description: Fork of OpenSSL that is designed to meet Google's needs - Devel
  Currently BoringSSL is the SSL library in Chrome/Chromium, Android (but it's
  not part of the NDK) and a number of other apps/programs.
  .
- Although BoringSSL has a different name than OpenSSL, the libraries' SONAME and
- header files' name do not change. Hence the files of this package is placed
- under a private directory to avoid conflict with OpenSSL in Debian.
- .
  This package contains the header files.
+
+Package: boringssl-tools
+Section: utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Fork of OpenSSL that is designed to meet Google's needs - Tools
+ BoringSSL arose because Google used OpenSSL for many years in various ways and,
+ over time, built up a large number of patches that were maintained while
+ tracking upstream OpenSSL. As Google’s product portfolio became more complex,
+ more copies of OpenSSL sprung up and the effort involved in maintaining all
+ these patches in multiple places was growing steadily.
+ .
+ Currently BoringSSL is the SSL library in Chrome/Chromium, Android (but it's
+ not part of the NDK) and a number of other apps/programs.
+ .
+ This package provides the "bssl" tool provided in BoringSSL.
