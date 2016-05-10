@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Android Tools Maintainers <android-tools-devel@lists.alioth.debian.org>
 Uploaders: Kai-Chung Yan <seamlikok@gmail.com>
 Standards-Version: 3.9.8
-Build-Depends: cmake (>= 2.8.8),
+Build-Depends: cmake (>= 2.8.10),
                debhelper (>= 9),
                dh-exec,
                golang-go,
@@ -45,7 +45,9 @@ Description: Fork of OpenSSL that is designed to meet Google's needs - Devel
 Package: boringssl-tools
 Section: utils
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: libboringssl (>= ${binary:Version}),
+         ${shlibs:Depends},
+         ${misc:Depends}
 Description: Fork of OpenSSL that is designed to meet Google's needs - Tools
  BoringSSL arose because Google used OpenSSL for many years in various ways and,
  over time, built up a large number of patches that were maintained while
