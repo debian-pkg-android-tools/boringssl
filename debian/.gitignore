@@ -1,5 +1,9 @@
+.debhelper/
 *.log
 *.substvars
+boringssl-tools/
 debhelper-build-stamp
 files
-libboringssl*/
+libboringssl-dev
+libboringssl/
+tmp/
