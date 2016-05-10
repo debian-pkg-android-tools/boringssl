@@ -1,0 +1,4 @@
+# Although BoringSSL has a different name than OpenSSL, the SONAMEs are not
+# changed, hence we are putting BoringSSL into a private directory in order to
+# avoid conflicts.
+binary-or-shlib-defines-rpath
