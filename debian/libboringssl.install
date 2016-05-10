@@ -1,4 +1,4 @@
 #!/usr/bin/dh-exec
 
-debian/cmake-obj/crypto/libcrypto.so usr/lib/${DEB_HOST_MULTIARCH}/BoringSSL
-debian/cmake-obj/ssl/libssl.so       usr/lib/${DEB_HOST_MULTIARCH}/BoringSSL
+debian/cmake-obj/crypto/libcrypto.so usr/lib/${DEB_HOST_MULTIARCH}/boringssl
+debian/cmake-obj/ssl/libssl.so       usr/lib/${DEB_HOST_MULTIARCH}/boringssl
