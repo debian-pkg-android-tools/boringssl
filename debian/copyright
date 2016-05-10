@@ -9,51 +9,191 @@ Files: crypto/*
 Copyright: 1998-2011, The OpenSSL Project
 License: OpenSSL
 
-Files: BUILDING.md
+Files: crypto/asn1/*
+       crypto/bio/*
+       crypto/bn/*
+       crypto/cipher/cipher.c
+       crypto/cipher/derive_key.c
+       crypto/cipher/e_aes.c
+       crypto/cipher/e_des.c
+       crypto/cipher/e_null.c
+       crypto/cipher/e_rc2.c
+       crypto/cipher/e_rc4.c
+       crypto/cipher/internal.h
+       crypto/conf/conf.c
+       crypto/conf/conf_def.h
+       crypto/cpu-intel.c
+       crypto/des/*
+       crypto/dh/check.c
+       crypto/dh/dh.c
+       crypto/dh/dh_test.cc
+       crypto/dh/internal.h
+       crypto/digest/digest.c
+       crypto/digest/digests.c
+       crypto/digest/internal.h
+       crypto/dsa/dsa.c
+       crypto/dsa/dsa_test.c
+       crypto/err/err.c
+       crypto/evp/evp.c
+       crypto/evp/evp_asn1.c
+       crypto/evp/evp_ctx.c
+       crypto/evp/internal.h
+       crypto/evp/sign.c
+       crypto/ex_data.c
+       crypto/hmac/*
+       crypto/internal.h
+       crypto/lhash/lhash.c
+       crypto/md4/md4.c
+       crypto/md5/md5.c
+       crypto/mem.c
+       crypto/obj/*
+       crypto/pem/*
+       crypto/rc4/rc4.c
+       crypto/rsa/*
+       crypto/sha/*.c
+       crypto/stack/stack.c
+       crypto/thread.c
+       crypto/x509/*
+       decrepit/bio/base64_bio.c
+       decrepit/blowfish/blowfish.c
+       decrepit/cast/*
+       decrepit/des/cfb64ede.c
+       decrepit/macros.h
+       decrepit/rc4/rc4_decrepit.c
+       decrepit/ripemd/internal.h
+       decrepit/ripemd/ripemd.c
+       decrepit/rsa/rsa_decrepit.c
+       decrepit/ssl/ssl_decrepit.c
+       include/openssl/asn1.h
+       include/openssl/asn1_mac.h
+       include/openssl/base64.h
+       include/openssl/bio.h
+       include/openssl/blowfish.h
+       include/openssl/bn.h
+       include/openssl/buf.h
+       include/openssl/cast.h
+       include/openssl/cipher.h
+       include/openssl/conf.h
+       include/openssl/cpu.h
+       include/openssl/des.h
+       include/openssl/dh.h
+       include/openssl/digest.h
+       include/openssl/dsa.h
+       include/openssl/err.h
+       include/openssl/evp.h
+       include/openssl/ex_data.h
+       include/openssl/hmac.h
+       include/openssl/lhash.h
+       include/openssl/md4.h
+       include/openssl/md5.h
+       include/openssl/mem.h
+       include/openssl/nid.h
+       include/openssl/obj.h
+       include/openssl/pem.h
+       include/openssl/rc4.h
+       include/openssl/ripemd.h
+       include/openssl/rsa.h
+       include/openssl/sha.h
+       include/openssl/ssl.h
+       include/openssl/ssl3.h
+       include/openssl/stack.h
+       include/openssl/thread.h
+       include/openssl/tls1.h
+       include/openssl/type_check.)
+       include/openssl/x509.h
+       include/openssl/x509_vfy.h
+       ssl/*.c
+       ssl/*.h
+Copyright: 1995-1998, Eric Young <eay@cryptsoft.com>
+License: SSLeay
+
+Files: .clang-format
+       .github/*
+       .gitignore
+       BUILDING.md
        CMakeLists.txt
        codereview.settings
        CONTRIBUTING.md
+       crypto/aes/aes_test.cc
        crypto/aes/CMakeLists.txt
        crypto/asn1/CMakeLists.txt
+       crypto/base64/base64_test.cc
        crypto/base64/CMakeLists.txt
+       crypto/bio/bio_test.cc
        crypto/bio/CMakeLists.txt
+       crypto/bio/socket_helper.c
+       crypto/bn/asm/*
+       crypto/bn/bn_asn1.c
        crypto/bn/CMakeLists.txt
        crypto/buf/CMakeLists.txt
-       crypto/bytestring/CMakeLists.txt
-       crypto/chacha/CMakeLists.txt
+       crypto/bytestring/*
+       crypto/chacha/*
+       crypto/cipher/aead.c
+       crypto/cipher/aead_test.cc
        crypto/cipher/CMakeLists.txt
+       crypto/cipher/e_chacha20poly1305.c
+       crypto/cipher/e_ssl3.c
+       crypto/cipher/e_tls.c
+       crypto/cmac/cmac_test.cc
        crypto/cmac/CMakeLists.txt
        crypto/CMakeLists.txt
        crypto/conf/CMakeLists.txt
-       crypto/curve25519/CMakeLists.txt
+       crypto/conf/internal.h
+       crypto/cpu-aarch64-linux.c
+       crypto/cpu-arm-linux.c
+       crypto/cpu-arm.c
+       crypto/crypto.c
+       crypto/curve25519/*
        crypto/des/CMakeLists.txt
        crypto/dh/CMakeLists.txt
        crypto/digest/CMakeLists.txt
+       crypto/digest/digest_test.cc
        crypto/dsa/CMakeLists.txt
+       crypto/ec/asm/p256-x86_64-asm.pl
        crypto/ec/CMakeLists.txt
+       crypto/ec/ec_test.cc
+       crypto/ec/p224-64.c
+       crypto/ec/p256-*
+       crypto/ec/util-64.c
        crypto/ecdh/CMakeLists.txt
        crypto/ecdsa/CMakeLists.txt
-       crypto/engine/CMakeLists.txt
+       crypto/engine/*
        crypto/err/CMakeLists.txt
+       crypto/err/err_data_generate.go
+       crypto/err/err_test.cc
        crypto/evp/CMakeLists.txt
-       crypto/hkdf/CMakeLists.txt
+       crypto/evp/evp_extra_test.cc
+       crypto/evp/pbkdf_test.cc
+       crypto/hkdf/*
        crypto/hmac/CMakeLists.txt
        crypto/lhash/CMakeLists.txt
+       crypto/lhash/lhash_test.c
+       crypto/lhash/make_macros.sh
        crypto/md4/CMakeLists.txt
        crypto/md5/CMakeLists.txt
        crypto/modes/CMakeLists.txt
-       crypto/newhope/CMakeLists.txt
+       crypto/newhope/*
        crypto/obj/CMakeLists.txt
+       crypto/obj/obj_test.cc
        crypto/pem/CMakeLists.txt
        crypto/pkcs8/CMakeLists.txt
-       crypto/poly1305/CMakeLists.txt
-       crypto/rand/CMakeLists.txt
+       crypto/pkcs8/pkcs12_test.cc
+       crypto/pkcs8/pkcs8_test.cc
+       crypto/poly1305/*
+       crypto/rand/*
+       crypto/refcount_*.c
        crypto/rc4/CMakeLists.txt
        crypto/rsa/CMakeLists.txt
        crypto/sha/CMakeLists.txt
        crypto/stack/CMakeLists.txt
-       crypto/test/CMakeLists.txt
+       crypto/stack/make_macros.sh
+       crypto/test/*
+       crypto/thread_*.c
        crypto/x509/CMakeLists.txt
+       crypto/x509/internal.h
+       crypto/x509/pkcs7.c
+       crypto/x509/pkcs7_test.c
+       crypto/x509/x509_test.cc
        crypto/x509v3/CMakeLists.txt
        decrepit/bio/CMakeLists.txt
        decrepit/blowfish/CMakeLists.txt
@@ -63,25 +203,63 @@ Files: BUILDING.md
        decrepit/dh/CMakeLists.txt
        decrepit/dsa/CMakeLists.txt
        decrepit/evp/CMakeLists.txt
-       decrepit/obj/CMakeLists.txt
+       decrepit/evp/evp_do_all.c
+       decrepit/obj/*
        decrepit/rc4/CMakeLists.txt
        decrepit/ripemd/CMakeLists.txt
+       decrepit/ripemd/ripemd_test.cc
        decrepit/rsa/CMakeLists.txt
        decrepit/ssl/CMakeLists.txt
-       decrepit/x509/CMakeLists.txt
-       decrepit/xts/CMakeLists.txt
+       decrepit/x509/*
+       decrepit/xts/*
        fuzz/*
-       fuzz/CMakeLists.txt
        FUZZING.md
+       include/openssl/aead.h
+       include/openssl/buffer.h
+       include/openssl/bytestring.h
+       include/openssl/chacha.h
+       include/openssl/cmac.h
+       include/openssl/crypto.h
+       include/openssl/curve25519.h
+       include/openssl/dtls1.h
+       include/openssl/engine.h
+       include/openssl/hkdf.h
+       include/openssl/lhash_macros.h
+       include/openssl/newhope.h
+       include/openssl/obj_mac.h
+       include/openssl/objects.h
+       include/openssl/opensslconf.h
+       include/openssl/opensslv.h
+       include/openssl/ossl_typ.h
+       include/openssl/pkcs12.h
+       include/openssl/pkcs7.h
+       include/openssl/poly1305.h
+       include/openssl/rand.h
+       include/openssl/safestack.h
+       include/openssl/srtp.h
+       include/openssl/stack_macros.h
        INCORPORATING.md
+       LICENSE
        PORTING.md
        README.md
        ssl/CMakeLists.txt
+       ssl/custom_extensions.c
        ssl/pqueue/CMakeLists.txt
-       ssl/test/CMakeLists.txt
+       ssl/pqueue/pqueue_test.c
+       ssl/ssl_aead_ctx.c
+       ssl/ssl_buffer.c
+       ssl/ssl_ecdh.c
+       ssl/ssl_test.cc
+       ssl/test/*
        STYLE.md
-       tool/CMakeLists.txt
-Copyright: 2016, Google Inc.
+       tool/*
+       util/*
+Copyright: 2014-2016, Google Inc.
+License: ISC
+
+Files: crypto/bn/rsaz_exp.*
+Copyright: 2012, Intel Corporation
+License: Intel
 
 Files: debian/*
 Copyright: 2016, Kai-Chung Yan <seamlikok@gmail.com>
@@ -139,7 +317,7 @@ License: ISC
  OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
  CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-License: BSD-3-clause
+License: Intel
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are
  met:
@@ -183,3 +361,57 @@ License: MIT
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
+
+License: SSLeay
+ This package is an SSL implementation written
+ by Eric Young (eay@cryptsoft.com).
+ The implementation was written so as to conform with Netscapes SSL.
+ .
+ This library is free for commercial and non-commercial use as long as
+ the following conditions are aheared to.  The following conditions
+ apply to all code found in this distribution, be it the RC4, RSA,
+ lhash, DES, etc., code; not just the SSL code.  The SSL documentation
+ included with this distribution is covered by the same copyright terms
+ except that the holder is Tim Hudson (tjh@cryptsoft.com).
+ .
+ Copyright remains Eric Young's, and as such any Copyright notices in
+ the code are not to be removed.
+ If this package is used in a product, Eric Young should be given attribution
+ as the author of the parts of the library used.
+ This can be in the form of a textual message at program startup or
+ in documentation (online or textual) provided with the package.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. All advertising materials mentioning features or use of this software
+    must display the following acknowledgement:
+    "This product includes cryptographic software written by
+     Eric Young (eay@cryptsoft.com)"
+    The word 'cryptographic' can be left out if the rouines from the library
+    being used are not cryptographic related :-).
+ 4. If you include any Windows specific code (or a derivative thereof) from 
+    the apps directory (application code) you must include an acknowledgement:
+    "This product includes software written by Tim Hudson (tjh@cryptsoft.com)"
+ .
+ THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+ .
+ The licence and distribution terms for any publically available version or
+ derivative of this code cannot be changed.  i.e. this code cannot simply be
+ copied and put under another distribution licence
+ [including the GNU General Public Licence.]
