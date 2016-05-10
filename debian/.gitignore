@@ -2,6 +2,7 @@
 *.log
 *.substvars
 boringssl-tools/
+cmake-obj/
 debhelper-build-stamp
 files
 libboringssl-dev
