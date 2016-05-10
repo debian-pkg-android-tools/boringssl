@@ -1,5 +1,5 @@
 boringssl (3.0-1) UNRELEASED; urgency=medium
 
-  * Initial release.
+  * Initial release (Closes: #823933)
 
- -- Kai-Chung Yan <seamlikok@gmail.com>  Sun, 01 May 2016 16:51:31 +0800
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Tue, 10 May 2016 23:07:13 +0800
